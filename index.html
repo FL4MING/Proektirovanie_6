@@ -19,6 +19,30 @@
 	<button onclick="link()">Изменить</button>
 	<br>
 	<a href="https:\\www.google.com">Ссылка</a>
-	<script src="https://github.com/FL4MING/Proektirovanie_6/blob/b6db8abc71985c91ee5609bce61f0f2143aa9bb8/actions.js"></script>
+	<script>
+		function background() {
+	let value = document.getElementById('background').value;
+	let elem = document.querySelector('body');
+	console.log(value);
+	console.log(elem);
+	elem.style.backgroundColor = value;
+}
+
+function text() {
+	let value = document.getElementById('text').value;
+	let elem = document.querySelector('p');
+	console.log(value);
+	console.log(elem);
+	elem.style.color = value;
+}
+
+function link() {
+	let value = document.getElementById('link').value;
+	let elem = document.querySelector('a');
+	console.log(value);
+	console.log(elem);
+	elem.href = "https://www."+value;
+}
+	</script>
 </body>
 </html>
